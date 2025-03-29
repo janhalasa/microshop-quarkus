@@ -1,0 +1,11 @@
+services:
+  shop:
+    image: "jan/shop:1.0.0-SNAPSHOT"
+    ports:
+      - "7200:8080"
+  payment:
+    image: "jan/payment:1.0.0-SNAPSHOT"
+    ports:
+      - "7201:8080"
+  kafka:
+    image: "apache/kafka:latest"
